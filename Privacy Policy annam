@@ -1,85 +1,128 @@
 # Privacy Policy – Annam
 
-Last Updated: June 2026
+Last Updated: October 2026
 
-Welcome to Annam. We respect your privacy and are committed to protecting your personal information.
+Welcome to Annam. We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains what information the Annam application ("Annam", "we", "the app") collects, how it is used, and the choices you have.
 
 ## Information We Collect
 
-The application may collect and store the following information:
+**Account information**
+* Name, email address, and phone number.
+* Sign-in details when you use Sign in with Apple or Google Sign-In (we receive your name and email as shared by those services; we never receive your Apple or Google password).
 
-* Account information such as name, email address, and phone number.
-* Farm information and livestock records entered by users.
-* Animal data, including health records, vaccinations, births, production, and related information.
-* Location data (only when permission is granted and required for app features such as weather information).
-* Device information required for notifications and application functionality.
+**Farm and livestock data you enter**
+* Farms, barns, and livestock records.
+* Animal data, including health records, vaccinations, treatments, births, weights, production, feed, and expenses.
+* Tasks, reminders, and QR codes generated for animals.
+
+**Photos, videos, and audio**
+* Photos and videos you choose to attach (for example in veterinary consultations, support conversations, or animal records), taken with your camera or selected from your photo library.
+* Audio recorded with a video when you use the camera to capture one.
+These are accessed only with your permission and only when you use these features.
+
+**Subscription and purchase information**
+* Your subscription plan (Free, Basic, or Pro), billing period, status, start and expiry dates, and renewal status.
+* Transaction identifiers needed to verify and manage your subscription.
+* We do **not** collect or store your card number or bank details.
+
+**Location data**
+* Your device location is used only when you grant permission and only to show weather forecasts for your farm when the farm has no saved location.
+
+**Device and technical information**
+* A notification token used to deliver push notifications.
+* Information used to verify that requests come from a genuine copy of the app (Firebase App Check).
+* App version information used to keep the app up to date.
 
 ## How We Use Information
 
 We use the collected information to:
 
-* Provide and improve application services.
-* Manage farms, livestock, health records, and related activities.
-* Send notifications and reminders requested by the user.
-* Provide technical support and customer service.
-* Improve application performance and user experience.
+* Create and manage your account and sign you in.
+* Provide the app's features: managing farms, livestock, health records, production, tasks, and reminders.
+* Activate, verify, renew, restore, and manage your subscription and enforce plan limits.
+* Let farm owners share access with the farm members they invite.
+* Send notifications and reminders you request or that relate to your farm.
+* Provide veterinary consultation features and customer support.
+* Keep the app secure, prevent fraud and abuse, and improve performance and reliability.
+
+We do **not** sell your personal information, and we do **not** use it for advertising or to track you across other companies' apps or websites.
+
+## Subscriptions and Payments
+
+* **On iOS (iPhone and iPad):** subscriptions are purchased only through Apple In-App Purchase. Payment is processed by Apple and charged to your Apple Account. Subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current period. You can manage or cancel your subscription in your Apple Account settings (App Store subscriptions). Refunds for App Store purchases are handled by Apple.
+* **On Android:** payments are processed by our payment provider, EdfaPay. Card details are entered in EdfaPay's secure payment form and are not stored by Annam.
+* We receive from Apple or EdfaPay only the information needed to confirm and manage your subscription (such as the plan, transaction identifiers, dates, and status).
+
+## Farm Members and Shared Data
+
+If you invite team members to your farm, they can view and manage the farm data allowed by the permissions you give them. Members' access is linked to the farm owner's subscription.
 
 ## Data Storage and Security
 
-We take reasonable measures to protect user information from unauthorized access, alteration, disclosure, or destruction.
+* Your data is stored on your device so the app works offline, and it is synchronized to secure cloud services (Google Firebase) when an internet connection is available.
+* Photos and videos you upload are stored in secure cloud storage (Firebase Storage).
+* Data is transmitted over encrypted connections (HTTPS/TLS).
+* Access to data is restricted by security rules so that each user can access only their own data and the farms they belong to.
 
-Data may be stored securely using cloud services and local device storage to support application functionality.
+We take reasonable measures to protect your information from unauthorized access, alteration, disclosure, or destruction.
 
 ## Third-Party Services
 
-The application may use third-party services including:
+The app uses the following third-party services, which process information according to their own privacy policies:
 
-* Firebase Authentication
-* Firebase Firestore
-* Firebase Cloud Messaging
-* Weather data providers
-* Apple Sign In
-* Google Sign In
-* Google Maps services (if enabled)
-
-These services may process information according to their own privacy policies.
+* Firebase Authentication (sign-in)
+* Cloud Firestore (database and synchronization)
+* Firebase Storage (photos and videos)
+* Firebase Cloud Messaging (push notifications)
+* Firebase Cloud Functions (secure server-side processing, including subscription verification)
+* Firebase App Check (app integrity)
+* Sign in with Apple
+* Google Sign-In
+* Apple App Store / In-App Purchase (iOS subscriptions)
+* EdfaPay (Android payments)
+* Open-Meteo (weather forecasts; receives only the farm or device coordinates needed for the forecast)
 
 ## User-Generated Content
 
-Users are responsible for the information they create and manage within the application, including farm records, livestock information, and communications.
+You are responsible for the information you create and manage in the app, including farm records, livestock information, photos, videos, and messages.
 
 ## Notifications
 
-The application may send notifications related to:
+The app may send notifications related to:
 
-* Livestock management
-* Vaccinations
-* Treatments
-* Birth records
-* Reminders
+* Livestock management and tasks
+* Vaccinations and treatments
+* Births and production records
+* Reminders you set
 * Support messages
-* Veterinary communications
+* Veterinary consultations
+* Subscription status (for example, upcoming expiry)
+* Important announcements about the app
 
-Users can manage notification permissions through their device settings.
+You can manage notification permissions at any time in your device settings.
+
+## Data Retention
+
+We keep your data for as long as your account is active. Subscription and payment records may be kept for the period required for accounting, tax, and legal purposes.
+
+## Account and Data Deletion
+
+You can delete your account at any time from **Settings > Delete Account** in the app. Deleting your account removes your account and its associated data, except records we are legally required to keep. Deleting your account does **not** cancel an App Store subscription; please cancel it in your Apple Account settings to stop future charges. You can also request deletion by contacting us.
 
 ## Children's Privacy
 
-The application is not specifically directed toward children under the age required by applicable laws.
-
-## Data Deletion
-
-Users may request deletion of their account and associated data through the application or by contacting support.
+The app is intended for farm owners and workers and is not directed to children under the age required by applicable laws. We do not knowingly collect personal information from children.
 
 ## Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time. Changes will become effective when published within the application or related services.
+We may update this Privacy Policy from time to time. The "Last Updated" date above shows when it was last changed. Changes become effective when published in the app or at this address.
 
 ## Contact Us
 
-If you have any questions regarding this Privacy Policy, please contact:
+If you have any questions about this Privacy Policy or your data, please contact us at:
 
-Email: [h2011-n@hotmail.com)
+Email: h2011-n@hotmail.com
 
 ---
 
-© 2026 Annam. All Rights Reserved.
+© 2026 Annam. All rights reserved.
