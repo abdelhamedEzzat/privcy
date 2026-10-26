@@ -1,0 +1,104 @@
+# 1. Who we are and what this policy covers
+
+This policy explains how [Operator legal name] ("Naskun", "we", "us") collects, uses and protects your personal data when you use the Naskun app in Oman, the United Arab Emirates and Saudi Arabia. We are responsible for this processing; our contact details are at the end of this policy.
+
+# 2. Data we collect
+
+- Account data: name, email, phone number (optional), profile photo and sign-in method. With Google sign-in we receive that account's name, email and photo; with Sign in with Apple we receive your email (or an Apple private relay address if you choose to hide it) and your name if you share it. We never see your password; Firebase Authentication checks it.
+- Guests without an account: a temporary anonymous identifier, used to protect the service and to count statistics without duplicates.
+- Owner data: business name, booking phone, WhatsApp number, country, ownership proof document, the time you accepted the Owner Terms, verification status and any rejection reason.
+- Place data: name, description, type, price, amenities, map location, area, photos and contact numbers, which become public when published.
+- Photos you upload: we remove the location (GPS) data embedded in a photo on your device before uploading it; other technical data such as orientation, capture date and device model may remain.
+- What you create: favorites, saved searches with their filters and alert setting, reviews (stars, tags, comment), reports (reason, description), ownership claims (message and documents), and support chat messages and images.
+- Device and notification data: the app installation ID used to send notifications (Firebase Installation ID), platform, device language and app version, your notification preference, and your in-app notification history. On iPhone, notifications are delivered through Apple's push notification service.
+- Usage data: opening a place page, tapping call, WhatsApp or directions, saving a favorite, searches by country and area, and technical measurements of distance calculation. These events carry ids, codes and counts only, never names, phone numbers or locations, and go to Firebase Analytics and our servers. Firebase Analytics may derive an approximate location (country or city) from your IP address. We do not use your device's advertising identifier and do not track you across other apps or websites.
+- Crash reports: through Firebase Crashlytics, with an internal account id, account role, app version and language, never names, emails, phone numbers, messages or precise location. Google libraries built into the app, such as Google Maps and Google sign-in, collect technical diagnostic and performance data under their own policies.
+- App integrity: Firebase App Check confirms that requests come from a genuine copy of the app; on iPhone it relies on Apple's App Attest and DeviceCheck.
+- Administrative records: any suspension reason, internal team notes, and an admin action log holding ids only.
+- On your device only: language, theme, chosen search country and an unsent support draft.
+
+# 3. Location data
+
+- We access your location only with your permission, asked when needed. You can refuse and choose a city or area yourself.
+- We use location to detect your country, show the nearest places and calculate road distances.
+- For distances, your location is sent to our servers, rounded to about 50 meters, then sent with the places' locations to Google's route service. We do not store your location or the distances on our servers permanently; distances are kept in your device's memory for up to 30 minutes.
+- Country detection uses your phone's built-in location service, which may contact the platform provider.
+- Tapping "Directions" opens Google Maps with the same starting point and the place as destination.
+- A saved search stores the filters you chose, including the location you set for the search.
+
+# 4. How we use data
+
+- To run your account and the service: sign-in, email verification and password reset emails, showing and searching places, favorites, saved searches and reviews.
+- To review places before publishing, verify owners and decide ownership claims.
+- To moderate content, handle reports and prevent fraud and abuse.
+- To send notifications about your account and activity, and to answer support requests.
+- To show aggregated statistics to owners and the Naskun team, and to improve the app and fix crashes.
+- To comply with the law and respond to lawful requests.
+
+We process data to provide the service you asked for, for our legitimate interest in protecting and improving it, with your consent where consent is required (such as location and notifications), and to meet legal obligations, under [Applicable data protection laws]. We do not sell your personal data.
+
+# 5. What others see and who can access your data
+
+- Everyone: published places and their contact numbers, reviews with the writer's display name, and owners' replies.
+- Owners: reviews of their places and aggregated statistics that do not identify who viewed or contacted. When you call or WhatsApp an owner, they see your number as that service shows it.
+- The Naskun team: account data, ownership proofs and claim documents, reports and support chats, as needed for its work.
+- Service providers: Google, as provider of Firebase, Google Maps and the route service, and Apple, as provider of notifications, Sign in with Apple and app integrity checks on iPhone, as the service requires.
+- Authorities: where required by law, or to protect rights and safety.
+
+# 6. Service providers and transfers outside your country
+
+The app and its data are hosted on Google Firebase (sign-in, database, storage, cloud functions, messaging, analytics, crash reporting, app integrity and remote configuration), and we use Google Maps and Google's route service. Data is processed and stored on Google servers, including in the United States, outside your country and the GCC. We rely on [Safeguards for transfers abroad] for these transfers.
+
+# 7. Retention
+
+- Account data is kept while the account exists, and is deleted or anonymized on deletion as described below.
+- A suspended account's data is kept until it is reactivated or deleted.
+- Markers that prevent double-counting statistics are deleted automatically after about three days; the aggregated daily statistics identify no one.
+- Analytics and crash reports: [Retention period for analytics and crash reports].
+- Anonymous guest identifiers: [Retention period for guest identifiers].
+- Backups and server logs: [Retention period for backups and logs].
+
+# 8. Deleting your account
+
+You can delete your account yourself from "Account", then "Delete account", after confirming your identity. The same process applies when the Naskun team deletes an account. On deletion:
+
+- Deleted: the account and sign-in, profile and photo, favorites, saved searches, notifications, devices registered for notifications, and the support chat and its images. If you sign in with Apple, we also revoke Naskun's link to your Apple account.
+- Also deleted for owners: the business profile and ownership proof, drafts and never-published places with their photos, and claim documents; the owner's offers end.
+- Hidden: every published place of a deleted owner, which becomes claimable by its rightful owner; pending requests are cancelled.
+- Kept without your name: your reviews, stars and text, so places' ratings do not change, shown as "Deleted user"; your reports; and the history of your requests.
+- Kept without personal data: an internal record that the account was deleted and the admin action log, both holding an internal id only, never your name, email or phone.
+
+Deletion is permanent and cannot be undone. You may later create a new account with the same email.
+
+# 9. Your rights and choices
+
+- Access your data, learn how it is processed, and request a copy.
+- Correct your data: edit your name, phone and photo in "Account", and ask support to correct anything else.
+- Delete your account and its data directly in the app.
+- Turn push notifications off, and withdraw location, notification or photo permissions in your phone's settings at any time.
+- Withdraw consent, object to or ask to restrict certain processing, as the law allows.
+- Complain to [Competent supervisory authority].
+
+To exercise your rights, use the support chat or [Privacy email]. We will reply within [Response period]. We may need to verify your identity first.
+
+# 10. Device permissions
+
+- Location: to detect your country, show the nearest places and calculate distances.
+- Notifications: requested when you turn notifications on, enable a saved-search alert, send a support message or submit a place for review, never just because you opened the app.
+- Camera, photos and files: only when you choose to upload a profile photo, place photos, a support image, or a proof or claim document.
+
+# 11. Security
+
+Server-side access rules stop any account from reading or changing another's data, and App Check verifies requests. Ownership proofs, claim documents and support images are visible only to the account they belong to and the Naskun team. Temporary passwords created by the Naskun team are shown once and never stored. No protection is perfect, so keep your password secret.
+
+# 12. Children
+
+The app is not intended for anyone under [Minimum age], and we do not knowingly collect their data. If you learn that a child has created an account, contact us so we can delete it.
+
+# 13. Changes to this policy
+
+We may update this policy from time to time. The app shows its version number and last-updated date, and we will notify you in the app of material changes before they take effect.
+
+# 14. Contact us
+
+- Support chat: "Account", then "Contact us".
