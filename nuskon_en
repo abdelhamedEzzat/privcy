@@ -1,72 +1,90 @@
 # 1. Who we are and what this policy covers
 
-This policy explains how [Operator legal name] ("Naskun", "we", "us") collects, uses and protects your personal data when you use the Naskun app in Oman, the United Arab Emirates and Saudi Arabia. We are responsible for this processing; our contact details are at the end of this policy.
+This policy explains how the Naskun app ("Naskun", "we", "us") collects, uses and protects your personal data when you use the app on Android or iPhone. Naskun lets you search for places to stay in Oman, the United Arab Emirates and Saudi Arabia and contact their hosts directly. We are responsible for this processing; our contact details are at the end of this policy.
 
 # 2. Data we collect
 
-- Account data: name, email, phone number (optional), profile photo and sign-in method. With Google sign-in we receive that account's name, email and photo; with Sign in with Apple we receive your email (or an Apple private relay address if you choose to hide it) and your name if you share it. We never see your password; Firebase Authentication checks it.
-- Guests without an account: a temporary anonymous identifier, used to protect the service and to count statistics without duplicates.
-- Owner data: business name, booking phone, WhatsApp number, country, ownership proof document, the time you accepted the Owner Terms, verification status and any rejection reason.
-- Place data: name, description, type, price, amenities, map location, area, photos and contact numbers, which become public when published.
-- Photos you upload: we remove the location (GPS) data embedded in a photo on your device before uploading it; other technical data such as orientation, capture date and device model may remain.
-- What you create: favorites, saved searches with their filters and alert setting, reviews (stars, tags, comment), reports (reason, description), ownership claims (message and documents), and support chat messages and images.
+- Account data: name, email, phone number (optional), profile photo (optional) and sign-in method. With Google sign-in we receive that account's name, email and photo; with Sign in with Apple on iPhone we receive your email (or an Apple private relay address if you choose to hide it) and your name if you share it. We never see your password; Firebase Authentication checks it.
+- Guests without an account: when you open the app we create an anonymous guest session in Firebase Authentication with a random identifier and no name, email or phone, to protect the service (for example, limits on distance requests) and to count statistics without duplicates. If you create an account later, the same identifier is linked to it.
+- Owner data: business name, booking phone, WhatsApp number, country, ownership proof document, the time and version of the Owner Terms you accepted, verification status and any rejection reason.
+- Place data: name, description, type, price, amenities, exact map location, area, photos and contact numbers, which become public when published.
+- Photos you upload: we remove the location (GPS) data embedded in JPEG photos on your device before uploading them; other technical data such as orientation, capture date and device model may remain. Photos in other formats (such as PNG) are uploaded as they are. Our servers create thumbnails of public place photos without any metadata.
+- Documents you upload: an owner's ownership proof, and ownership-claim documents (up to three PDF or image files) with their file names, uploaded as they are.
+- What you create: favorites, saved searches with their name, text, filters (including the location you set for the search) and alert setting, reviews (stars, tags, comment), reports (reason, description), ownership claims (message and documents), and support chat messages and images.
 - Device and notification data: the app installation ID used to send notifications (Firebase Installation ID), platform, device language and app version, your notification preference, and your in-app notification history. On iPhone, notifications are delivered through Apple's push notification service.
-- Usage data: opening a place page, tapping call, WhatsApp or directions, saving a favorite, searches by country and area, and technical measurements of distance calculation. These events carry ids, codes and counts only, never names, phone numbers or locations, and go to Firebase Analytics and our servers. Firebase Analytics may derive an approximate location (country or city) from your IP address. We do not use your device's advertising identifier and do not track you across other apps or websites.
-- Crash reports: through Firebase Crashlytics, with an internal account id, account role, app version and language, never names, emails, phone numbers, messages or precise location. Google libraries built into the app, such as Google Maps and Google sign-in, collect technical diagnostic and performance data under their own policies.
-- App integrity: Firebase App Check confirms that requests come from a genuine copy of the app; on iPhone it relies on Apple's App Attest and DeviceCheck.
-- Administrative records: any suspension reason, internal team notes, and an admin action log holding ids only.
-- On your device only: language, theme, chosen search country and an unsent support draft.
+- Usage data: opening a place page (place id, country, type), tapping call, WhatsApp or directions (place id, country, the screen you tapped from), searches (country, area, sort order, number of filters and results, never the search text), and technical measurements of distance calculation. These events carry no names, phone numbers or coordinates and go to Firebase Analytics, which identifies the app installation with its own random identifier that we do not link to your account ID, and which may derive an approximate location (country or city) from your IP address. The same events reach our servers for place statistics.
+- We do not use your device's advertising identifier: its permission is removed from the Android app and its collection is turned off in Firebase Analytics. The app has no ads and does not track you across other apps or websites.
+- Crash reports: through Firebase Crashlytics, with technical crash details, the device and app state at the time, a Crashlytics installation ID, your internal account ID and role, the app version and language. They never include your name, email, phone number, messages or location.
+- Google libraries in the app: Google Maps in the app collects your IP address, device details, a pseudonymous Maps identifier, map pan and zoom events and its own crash reports, and Google sign-in collects what it needs, under the Google Privacy Policy. The app loads its fonts from Google Fonts.
+- App integrity: Firebase App Check confirms that requests come from a genuine copy of the app. On Android it uses Google Play Integrity (package name and version, signing certificate and a device integrity verdict); on iPhone it uses Apple's App Attest and DeviceCheck.
+- Administrative records: any suspension reason, internal team notes, and an admin action log holding ids.
+- On your device only: language, theme, chosen search country, detected country code and an unsent support draft.
 
 # 3. Location data
 
-- We access your location only with your permission, asked when needed. You can refuse and choose a city or area yourself.
+- We access your device's location only with your permission, asked when needed. You can refuse it or allow approximate location only, and choose a country or area yourself.
 - We use location to detect your country, show the nearest places and calculate road distances.
-- For distances, your location is sent to our servers, rounded to about 50 meters, then sent with the places' locations to Google's route service. We do not store your location or the distances on our servers permanently; distances are kept in your device's memory for up to 30 minutes.
-- Country detection uses your phone's built-in location service, which may contact the platform provider.
+- For distances, your location is rounded to about 50 meters and sent to our servers, then sent with the places' locations to the Google Maps Routes service. We do not store your location or the distances on our servers; we keep only a count of distance requests per account or guest to prevent abuse. Distances are kept in your device's memory for up to 30 minutes.
+- Google receives the coordinates sent to Google Maps services and may use and keep them to provide and improve its services under the Google Privacy Policy.
+- Country detection uses your phone's built-in location service, which may contact the platform provider; only the country code is kept on your device.
 - Tapping "Directions" opens Google Maps with the same starting point and the place as destination.
-- A saved search stores the filters you chose, including the location you set for the search.
+- A saved search around a point you picked on the map stores that point's coordinates with the search until you delete it or your account; a search "around me" stores no coordinates.
+- An owner sets a place's location on the map or from a Google Maps link; their device then opens the short link with Google to read the coordinates.
 
 # 4. How we use data
 
-- To run your account and the service: sign-in, email verification and password reset emails, showing and searching places, favorites, saved searches and reviews.
+- To run your account and the service: sign-in, email verification and password reset emails, showing and searching places, favorites, saved searches and their alerts, and reviews.
 - To review places before publishing, verify owners and decide ownership claims.
-- To moderate content, handle reports and prevent fraud and abuse.
+- To moderate content, handle reports, protect the service and prevent fraud and abuse.
 - To send notifications about your account and activity, and to answer support requests.
 - To show aggregated statistics to owners and the Naskun team, and to improve the app and fix crashes.
 - To comply with the law and respond to lawful requests.
 
-We process data to provide the service you asked for, for our legitimate interest in protecting and improving it, with your consent where consent is required (such as location and notifications), and to meet legal obligations, under [Applicable data protection laws]. We do not sell your personal data.
+We process data to provide the service you asked for, for our legitimate interest in protecting and improving it, with your consent where consent is required (such as location and notifications), and to meet legal obligations, under the data protection laws that apply in your country. We do not sell your personal data and do not share it with advertisers.
 
 # 5. What others see and who can access your data
 
-- Everyone: published places and their contact numbers, reviews with the writer's display name, and owners' replies.
-- Owners: reviews of their places and aggregated statistics that do not identify who viewed or contacted. When you call or WhatsApp an owner, they see your number as that service shows it.
+- Everyone, including people browsing without an account: published places with their photos, contact numbers and exact location, reviews with the writer's display name and an internal account ID, and owners' replies. Place photo file names include an internal ID of the uploader.
+- Owners: reviews of their places and aggregated statistics that do not identify who viewed or contacted. When you call or WhatsApp an owner, you do so from your phone or WhatsApp app, and they see your number as that service shows it.
 - The Naskun team: account data, ownership proofs and claim documents, reports and support chats, as needed for its work.
-- Service providers: Google, as provider of Firebase, Google Maps and the route service, and Apple, as provider of notifications, Sign in with Apple and app integrity checks on iPhone, as the service requires.
+- Service providers: Google, as provider of Firebase, Google Maps, the Routes service, Google Fonts and Play Integrity, and Apple, as provider of notifications, Sign in with Apple and app integrity checks on iPhone, as the service requires.
 - Authorities: where required by law, or to protect rights and safety.
 
 # 6. Service providers and transfers outside your country
 
-The app and its data are hosted on Google Firebase (sign-in, database, storage, cloud functions, messaging, analytics, crash reporting, app integrity and remote configuration), and we use Google Maps and Google's route service. Data is processed and stored on Google servers, including in the United States, outside your country and the GCC. We rely on [Safeguards for transfers abroad] for these transfers.
+The app and its data are hosted on Google Firebase (sign-in, database, storage, cloud functions, messaging, analytics, crash reporting, app integrity and remote configuration), and we use Google Maps and the Routes service.
+
+- The database (Cloud Firestore) is in Google's multi-region locations in the United States (nam5).
+- Cloud functions run in the us-central1 and us-east1 regions in the United States.
+- File storage (Cloud Storage) is in the us-east1 region in the United States.
+- Firebase Authentication runs from Google data centers in the United States, and other Firebase services and Google Maps may process data in any country where Google or its subprocessors maintain facilities.
+
+This means your data is transferred to and stored outside your country and outside the GCC. Google processes Firebase data on our behalf under the Firebase Data Processing and Security Terms; Google Analytics and Google Maps are subject to their own terms. Your use of maps in the app is also subject to the Google Maps Additional Terms of Service (https://maps.google.com/help/terms_maps/) and the Google Privacy Policy (https://policies.google.com/privacy).
 
 # 7. Retention
 
-- Account data is kept while the account exists, and is deleted or anonymized on deletion as described below.
-- A suspended account's data is kept until it is reactivated or deleted.
-- Markers that prevent double-counting statistics are deleted automatically after about three days; the aggregated daily statistics identify no one.
-- Analytics and crash reports: [Retention period for analytics and crash reports].
-- Anonymous guest identifiers: [Retention period for guest identifiers].
-- Backups and server logs: [Retention period for backups and logs].
+- Account data, profile, favorites, saved searches and the support chat: while the account exists or until you delete them yourself; on account deletion they are deleted or anonymized as described below.
+- Ownership proofs and claim documents: while their owner's account exists, for reference in ownership disputes; deleted with the account or when the place is deleted.
+- Suspended accounts: their data is kept until the account is reactivated or deleted.
+- Markers that prevent double-counting statistics (account or guest ID, place, interaction type and day): deleted automatically after about three days; the aggregated daily statistics identify no one.
+- Guest identifier: stays on your device until you delete the app or clear its data. Its anonymous record in the sign-in service (the identifier and creation date, with no personal data) and its distance-request counter are currently not deleted automatically.
+- Notification identifiers: deleted when you sign out or delete your account; Firebase treats them as expired after 270 days without a connection.
+- Firebase Analytics: event data at the app-installation level is kept for no more than 14 months, then remains only in aggregated reports that identify no one.
+- Firebase Crashlytics: crash reports and their identifiers are deleted automatically after 90 days.
+- Anonymized reviews and reports, the account-deletion record and the admin action log: kept without name, email or phone, with no set period, to preserve place ratings and moderation records.
+- Backups: we do not create database backups. Files deleted from storage stay recoverable for 7 days and are then removed permanently. Google removes deleted data from its live and backup systems within a maximum of 180 days under the Firebase terms, and the sign-in service keeps logged IP addresses for a few weeks for security.
+- Server logs: Google Cloud Logging keeps server operation logs (such as function errors and timings, which may include internal IDs) for 30 days and then deletes them automatically, and the project administration audit logs for 400 days.
 
 # 8. Deleting your account
 
-You can delete your account yourself from "Account", then "Delete account", after confirming your identity. The same process applies when the Naskun team deletes an account. On deletion:
+You can delete your account yourself from "Account", then "Delete account", after confirming your identity; deletion starts at once and is completed automatically on our servers. You can also ask for deletion outside the app by email at hagaznalak@gmail.com or through the support chat, and we will carry it out within 30 days after confirming that you own the account. The request steps are on the account deletion page: https://abdelhamedezzat.github.io/privcy/naskun/account-deletion/ . The same process applies when the Naskun team deletes an account. On deletion:
 
-- Deleted: the account and sign-in, profile and photo, favorites, saved searches, notifications, devices registered for notifications, and the support chat and its images. If you sign in with Apple, we also revoke Naskun's link to your Apple account.
+- Deleted: the account and sign-in, profile and photo, favorites, saved searches, notifications, devices registered for notifications, the support chat and its images, the distance-request counter, and the Naskun team's notes about your account. If you sign in with Apple, we also revoke Naskun's link to your Apple account.
 - Also deleted for owners: the business profile and ownership proof, drafts and never-published places with their photos, and claim documents; the owner's offers end.
-- Hidden: every published place of a deleted owner, which becomes claimable by its rightful owner; pending requests are cancelled.
-- Kept without your name: your reviews, stars and text, so places' ratings do not change, shown as "Deleted user"; your reports; and the history of your requests.
-- Kept without personal data: an internal record that the account was deleted and the admin action log, both holding an internal id only, never your name, email or phone.
+- Hidden: every published place of a deleted owner, with its photos, which becomes claimable by its rightful owner; pending requests are cancelled.
+- Kept without your name: your reviews (stars, tags, text and owners' replies) so places' ratings do not change, shown as "Deleted user"; your reports with their reason and description; and the history of your requests without their attachments.
+- Kept without personal data: an internal record that the account was deleted (ID, role and date) and the admin action log, both holding an internal ID only, never your name, email or phone.
+- Not deleted with the account: Firebase Analytics data and crash reports, which are deleted on the schedules in the previous section.
 
 Deletion is permanent and cannot be undone. You may later create a new account with the same email.
 
@@ -74,26 +92,26 @@ Deletion is permanent and cannot be undone. You may later create a new account w
 
 - Access your data, learn how it is processed, and request a copy.
 - Correct your data: edit your name, phone and photo in "Account", and ask support to correct anything else.
-- Delete your account and its data directly in the app.
-- Turn push notifications off, and withdraw location, notification or photo permissions in your phone's settings at any time.
+- Delete your account and its data directly in the app, or delete favorites and saved searches at any time.
+- Turn push notifications off, and withdraw location or notification permissions in your phone's settings at any time.
 - Withdraw consent, object to or ask to restrict certain processing, as the law allows.
-- Complain to [Competent supervisory authority].
+- Complain to the data protection authority in your country.
 
-To exercise your rights, use the support chat or [Privacy email]. We will reply within [Response period]. We may need to verify your identity first.
+To exercise your rights, use the support chat or email hagaznalak@gmail.com. We will reply within 30 days. We may need to verify your identity first.
 
 # 10. Device permissions
 
-- Location: to detect your country, show the nearest places and calculate distances.
+- Location (precise or approximate): to detect your country, show the nearest places and calculate distances.
 - Notifications: requested when you turn notifications on, enable a saved-search alert, send a support message or submit a place for review, never just because you opened the app.
-- Camera, photos and files: only when you choose to upload a profile photo, place photos, a support image, or a proof or claim document.
+- Photos, camera and files: the app opens your system's photo picker, camera or file picker only when you choose to upload a profile photo, place photos, a support image, or a proof or claim document, and it accesses only what you pick.
 
 # 11. Security
 
-Server-side access rules stop any account from reading or changing another's data, and App Check verifies requests. Ownership proofs, claim documents and support images are visible only to the account they belong to and the Naskun team. Temporary passwords created by the Naskun team are shown once and never stored. No protection is perfect, so keep your password secret.
+Data travels between the app and our servers encrypted (HTTPS), and Google encrypts it at rest. Server-side access rules stop any account from reading or changing another's data, and our server operations require App Check. Ownership proofs and claim documents are visible only to the account they belong to and the Naskun team, and support images only to the chat's account and the Naskun team. Temporary passwords created by the Naskun team are shown once and never stored. No protection is perfect, so keep your password secret.
 
-# 12. Children
+# 12. Age
 
-The app is not intended for anyone under [Minimum age], and we do not knowingly collect their data. If you learn that a child has created an account, contact us so we can delete it.
+The app is intended for people aged 18 and over, and we do not knowingly collect data from anyone younger. If you learn that someone under 18 has created an account, contact us so we can delete it.
 
 # 13. Changes to this policy
 
@@ -102,3 +120,6 @@ We may update this policy from time to time. The app shows its version number an
 # 14. Contact us
 
 - Support chat: "Account", then "Contact us".
+- Email: hagaznalak@gmail.com
+- Privacy policy on the web: https://abdelhamedezzat.github.io/privcy/naskun/privacy/
+- Account deletion: https://abdelhamedezzat.github.io/privcy/naskun/account-deletion/
